@@ -12,6 +12,8 @@ nav
 /*  header properties*/
 
   header{
+  position: fixed;
+  background-color: white;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
@@ -56,9 +58,10 @@ nav
       column large  id 1
         article
           photo
-        sub-column/column/medium
-          article
-          photo
+        sub_stories
+          column medium
+            article
+            photo
       column medium  id 2
           article
             photo
@@ -67,6 +70,86 @@ nav
 
         photo ids are story_main. story1, story2, and story3.
     */
+
+    /*  main container and general properties  */
+
+
+.main {
+      display: flex;
+      width: 1232px;
+      margin:0 auto 78px auto;
+      padding-top: 116px;
+      justify-content: space-between;
+
+
+      border-width: 1px;
+      border-style: solid;
+      border-color: blue;
+
+      }
+
+
+.sub_stories{
+  display:flex;
+  justify-content: space-between;
+  }
+
+.sub_stories .column.medium{
+  justify-content: space-between;
+}
+
+/*article formatting*/
+.article{
+  width: inherit;
+}
+
+/*paragraph formatting*/
+.article p{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+  width:inherit;
+    }
+
+/*photo formatting*/
+
+.photo {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  width: inherit;
+  height: 300px;
+  justify-content: center;
+  text-align: center;
+  }
+
+.photo span{
+  color: white;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/*bite formatting*/
+
+.news-bites h3{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 41px;
+  }
+
+.news-bites span{
+  display: block;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  padding: 11px 20px;
+  border-bottom: 1px solid black;
+
+}
+
 /*images*/
 
 #story_main{
@@ -93,35 +176,25 @@ img.cookie{
 }
 
 
-
-  /*  main container and general properties
-  .main {
-    display: flex;
-    width: 1232px;
-    margin:0 auto 78px auto;
-    padding-top: 116px;
-
-
-    border-width: 1px;
-    border-style: solid;
-    border-color: blue;
-    }
-
-
-    */
-
   /* column */
 
   .column.large{
+    display:flex;
+    flex-direction: column;
     width: 630px;
   }
 
   .column.medium{
+    display:flex;
+    flex-direction: column;
     width: 300px;
+
     }
 
   .column.small{
-     width: 240px;
+    display:flex;
+    flex-direction: column;
+    width: 240px;
      }
 
   /* sub_column */
