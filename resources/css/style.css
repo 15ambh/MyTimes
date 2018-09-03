@@ -1,3 +1,10 @@
+/*
+classes Header
+logo
+nav
+*/
+
+
 
 /*  header properties*/
 
@@ -21,7 +28,7 @@
     display: inline-flex;
     justify-content: space-around;
     min-width: 50px:
-      }
+    }
 
   .nav{
     display: inline-block;
@@ -32,10 +39,57 @@
     color: black;
     padding:5px;
     font-size: 14px;
+    align-items: center;
+    }
+
+    /*
+    div classes/ids main content
+    main
+      column/large  id 1
+        article
+          photo
+        sub-column/column/medium
+          article
+          photo
+      column/medium  id 2
+          article
+            photo
+      column/small id 3
+        bite
+    */
+
 
   /*  main container properties*/
+  .main {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+    }
 
   /* All column properties */
+
+  .column{
+    display: flex;
+    flex-direction: column;
+  }
+  /* column large */
+
+  .large{
+    width: 630px;
+  }
+
+  /* column medium */
+
+  .medium{
+    width: 300px;
+    }
+
+  /* column small */
+  .small{
+    width: 240px;
+  }
+
   /* column 1 */
   /* column 2 */
   /* column 3 */
