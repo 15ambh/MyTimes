@@ -3,7 +3,10 @@ classes Header
 logo
 nav
 */
-
+  body{
+    margin: 0px;
+    display: block;
+  }
 
 
 /*  header properties*/
@@ -16,10 +19,12 @@ nav
   border-style: solid;
   border-color:black;
   width:100%;
+  height: 80px;
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
   overflow: visible;
+  z-index: 1
   }
 
   .logo{
@@ -27,74 +32,96 @@ nav
     align-items: center;
     display: inline-flex;
     justify-content: space-around;
-    min-width: 50px:
+    height:60px;
+    width:200px;
     }
 
   .nav{
     display: inline-block;
     overflow: visible;
+
     }
 
-  .nav a {
-    color: black;
-    padding:5px;
+  .nav span {
+    padding:20px 10px;
     font-size: 14px;
-    align-items: center;
     }
+  .nav a{
+    color: black;
+  }
 
     /*
     div classes/ids main content
     main
-      column/large  id 1
+      column large  id 1
         article
           photo
         sub-column/column/medium
           article
           photo
-      column/medium  id 2
+      column medium  id 2
           article
             photo
-      column/small id 3
+      column small id 3
         bite
+
+        photo ids are story_main. story1, story2, and story3.
     */
+/*images*/
+
+#story_main{
+  background-image:url(../images/img-story-main.png);
+  width: 630px;
+  font-size: 40px;
+  text-align:left;
+  margin-top: 0px;
+
+}
+#story1{
+  background-image:url(../images/img-story-1.png);
+}
+#story2{
+  background-image:url(../images/img-story-2.png);
+}
+#story3{
+  background-image:url(../images/img-story-3.png);
+}
+
+img.cookie{
+  height:240px;
+  width: 240px;
+}
 
 
-  /*  main container properties*/
+
+  /*  main container and general properties
   .main {
     display: flex;
-    flex-direction: column;
-    overflow: scroll;
+    width: 1232px;
+    margin:0 auto 78px auto;
+    padding-top: 116px;
 
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
     }
 
-  /* All column properties */
 
-  .column{
-    display: flex;
-    flex-direction: column;
-  }
-  /* column large */
+    */
 
-  .large{
+  /* column */
+
+  .column.large{
     width: 630px;
   }
 
-  /* column medium */
-
-  .medium{
+  .column.medium{
     width: 300px;
     }
 
-  /* column small */
-  .small{
-    width: 240px;
-  }
+  .column.small{
+     width: 240px;
+     }
 
-  /* column 1 */
-  /* column 2 */
-  /* column 3 */
-
-
-
-
-    }
+  /* sub_column */
