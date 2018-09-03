@@ -1,0 +1,46 @@
+
+/*  header properties*/
+
+  header{
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  border-width: 1px;
+  border-style: solid;
+  border-color:black;
+  width:100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: visible;
+  }
+
+  .logo{
+    color: MediumAquamarine;
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-around;
+    min-width: 50px:
+      }
+
+  .nav{
+    display: inline-block;
+    overflow: visible;
+    }
+
+  .nav a {
+    color: black;
+    padding:5px;
+    font-size: 14px;
+
+  /*  main container properties*/
+
+  /* All column properties */
+  /* column 1 */
+  /* column 2 */
+  /* column 3 */
+
+
+
+
+    }
